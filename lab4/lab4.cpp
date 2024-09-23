@@ -52,8 +52,13 @@ void arithmetic() {
 
 	cout << "Enter a number to add each time: ";
 	cin >> addingNumber;
+
 	cout << "Enter the number of elements in the series: ";
 	cin >> elementsNumber;
+	while (elementsNumber < 0) {
+		cout << "Please enter a POSITIVE number: ";
+		cin >> elementsNumber;
+	}
 	
 	for (int i = 1; i < elementsNumber; i++) {
 			cout << nextNumber << " + ";
@@ -78,8 +83,13 @@ void geometric() {
 
 	cout << "Enter a number to multiply by each time: ";
 	cin >> multiplyingNumber;
+
 	cout << "Enter the number of elements in the series: ";
 	cin >> elementsNumber;
+	while (elementsNumber < 0) {
+		cout << "Please enter a POSITIVE number: ";
+		cin >> elementsNumber;
+	}
 
 	for (int i = 1; i < elementsNumber; i++) {
 		cout << nextNumber << " * ";
